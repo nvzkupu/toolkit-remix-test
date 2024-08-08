@@ -16,4 +16,7 @@ jobs:
 
     - name: Build Windows
       shell: powershell
-      run: dir
+      run: |
+        dir
+        Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+        . .\build.bat --rebuild --release

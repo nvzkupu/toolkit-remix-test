@@ -16,4 +16,6 @@ jobs:
 
     - name: Build Linux
       shell: bash
-      run: ls -alh
+      run: |
+        ls -alh
+        ./build.sh --rebuild --release
