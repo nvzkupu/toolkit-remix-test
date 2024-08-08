@@ -10,7 +10,10 @@ jobs:
   build-windows:
     runs-on: windows-2022
 
-    steps:  
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
     - name: Build Windows
       shell: powershell
       run: dir
