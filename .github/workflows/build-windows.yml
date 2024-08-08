@@ -1,5 +1,8 @@
 name: Build Windows
 
+env:
+  CARB_SETTING_SHOW_REMIX_SUPPORT_POPUP: 0
+
 on:
   push:
     branches: [main]
