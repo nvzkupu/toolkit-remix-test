@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Build Linux
-      shell: bash
+      shell:  'script -q -e -c "bash {0}"'
       run: |
         ls -alh
         ./build.sh --rebuild --release
